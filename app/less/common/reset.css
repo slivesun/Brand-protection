@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.text-center{
+	text-align: center !important;
+}
+.text-left{
+	text-align: left !important;
+}
+.text-right{
+	text-align: right !important;
+}
+pre{
+	overflow: initial;
+	line-height: 24px;
+}
+.ant-modal{
+	top: 150px !important;
+}
+.ant-table-thead tr{ 
+	background: #f3f7ff;
+}
+.ant-table-thead tr th div{
+
+	color: #262626;
+}
+.ant-table-fixed{
+	margin-top: 10px;
+}
+ .ant-table-thead tr th{
+	padding: 0px 14px;
+    line-height: 40px;
+}  
+.ant-table-tbody tr td{
+	padding: 14px 14px;
+	vertical-align: middle;
+}
+.ant-table-tbody td{
+	color: #666;
+	border-bottom: 1px solid #e8ebec;
+	
+}
+.ant-avatar-string{
+	display: inline-block;
+}
+

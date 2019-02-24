@@ -1,0 +1,227 @@
+@primaryBlueColor: #108cee;
+@primaryGoldColor: #bda571;
+@sideNavBgColor: #19233c;
+@tableHeadBgColor: #f3f9fe;
+@tableHoverBgColor: #faf9f5;
+@tableBorderColor: #e8ebec;
+@dividerColor: #d9d9d9;
+@titleFontColor: #333;
+@contentFontColor: #666;
+@subContentFontColor: #999;
+@tipFontColor: #d4d4d4;
+@primaryTipFontColor: #108cee;
+@errorTipFontColor: #e90e24;
+
+@baseFontSize: 14px;
+@subTitleFontSize: 16px;
+@mainTitleFontSize: 18px;
+
+.base-btn {
+  box-sizing: border-box;
+  padding: 0 16px;
+  font-size: @baseFontSize;
+}
+
+
+.btn4-base {
+  .base-btn;
+  border-color: @dividerColor;
+  color: @contentFontColor;
+  &:active {
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+.btn5-base {
+  .base-btn;
+  border-color: @dividerColor;
+  color: @contentFontColor;
+}
+
+body {
+  .btn1-main {
+    .base-btn;
+    border-color: transparent;
+    background-color: @primaryBlueColor;
+    &:hover {
+      background-color: #00a2ff;
+    }
+    &:active, &:focus {
+      background-color: #1480e4;
+    }
+  }//蓝底白字
+  .btn1-sub {
+    .base-btn;
+    border-color: @dividerColor;
+    color: @contentFontColor;
+    &:hover {
+      border-color: #ded2b8;
+      color: @contentFontColor;
+    }
+    &:active, &:focus {
+      border-color: #ded2b8;
+      color: @titleFontColor;
+    }
+  }//白底黑字
+
+  .btn2-main {
+    .base-btn;
+    border-color: transparent;
+    background-color: @primaryGoldColor;
+    color: #fff;
+    &:hover {
+      background-color: #c0ae8a;
+      color: #fff;
+      border-color: transparent;
+    }
+    &:active, &:focus {
+      background-color: #aa9465;
+      border-color: transparent;
+      color: #fff;
+    }
+  }//黄底白字
+  .btn2-sub {
+    .base-btn;
+    border-color: @dividerColor;
+    color: @contentFontColor;
+    // modal 取消按钮居右
+    float: right;
+    margin-left: 10px;
+    &.noneFloat {
+      float: none;
+    }
+
+    &:hover {
+      border-color: #ded2b8;
+      color: @contentFontColor;
+    }
+    &:active, &:focus {
+      border-color: @primaryGoldColor;
+      color: @contentFontColor;
+      background-color: @tableHoverBgColor;
+    }
+  }//白底黑子金框
+
+  .btn3-main {
+    .base-btn;
+    border-color: transparent;
+    background-color: @errorTipFontColor;
+    color: #fff;
+    &:hover {
+      border-color: transparent;
+      background-color: #eb273a;
+      color: #fff;
+    }
+    &:active, &:focus {
+      color: #fff;
+      border-color: transparent;
+      background-color: #d10d20;
+    }
+  }//红底白字
+
+  .btn4-pass {
+    .btn4-base;
+    &:hover,&:focus {
+      .btn4-base;
+    }
+    &:active {
+      background-color: #52c41a;
+    }
+  }//白底黑子 通过
+  .btn4-reject {
+    .btn4-base;
+    &:hover,&:focus {
+      .btn4-base;
+    }
+    &:active {
+      background-color: #faad14;
+    }
+  }//白底黑子 驳回
+
+  .btn5-reject {
+    .btn5-base;
+    &:active {
+      border-color: @errorTipFontColor;
+      background-color: rgba(233, 14, 36, 0.05);
+      color: @errorTipFontColor;
+    }
+  }//白底黑子 不合格
+  .btn5-pass {
+    .btn5-base;
+    &:active {
+      border-color: #52c41a;
+      background-color: rgba(63, 184, 56, 0.05);
+      color: #52c41a;
+    }
+  }//白底黑子 合格
+
+  .btn6{
+    .base-btn;
+    border-color: @primaryBlueColor;
+    color: @primaryTipFontColor;
+    &:active {
+      border-color: #1480e4;
+      color: @primaryTipFontColor;
+      background-color: rgba(16, 140, 238, 0.05);
+    }
+    
+  } //白底蓝字篮框
+
+  // .btn7-disable {
+  //   .base-btn;
+  //   background-color: #f7f7f7;
+  //   border-color: @dividerColor;
+  // }
+
+}
+.breadcrumb{
+    span:nth-child(2){
+        color: rgba(0, 0, 0, 0.85) !important;
+    }
+}
+.content{
+    .search-box{
+        .input-box{
+            .item{
+                .lab{
+                    color: rgba(0, 0, 0, 0.85) !important;
+                }
+            }
+        }
+    }  
+}
+.YellowWhite{
+    .ant-modal-content{
+        .ant-modal-footer{
+            div{
+                .ant-btn-primary{
+                    background-color: #bda571 !important;
+                    border: 1px solid #bda571;
+                    &:hover {
+                        background-color: #c0ae8a;
+                        color: #fff;
+                        border-color: transparent;
+                        }
+                }
+            }
+        }
+        .ant-modal-body{
+            .ant-modal-confirm-body-wrapper{
+                .ant-modal-confirm-btns{
+                    .ant-btn-primary{
+                        background-color: #bda571 !important;
+                        border: 1px solid #bda571;
+                        &:hover {
+                            background-color: #c0ae8a;
+                            color: #fff;
+                            border-color: transparent;
+                          }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+

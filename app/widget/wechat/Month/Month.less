@@ -1,0 +1,107 @@
+@w : 375/15rem;
+.month{
+    width:375/@w ;
+    .active{
+        background-color: rgba(189, 165, 113, 1) !important;
+        color: #fff !important;
+        border-color:  rgba(189, 165, 113, 1)!important;
+        
+    }
+    .rmc-tabs-tab-bar-top .rmc-tabs-tab-bar-tab, 
+    .rmc-tabs-tab-bar-bottom .rmc-tabs-tab-bar-tab {
+        padding: 12/@w  0;
+        font-size: 16/@w;
+    }
+    .but-box{
+        text-align: center;
+        padding: 12/@w  0;
+    }
+    .tab-item{
+        background: #f3f3f3;
+        padding-top: 6/@w;
+        h5{
+            height:  30/@w;
+            margin-bottom: 0px;
+            background: #fff;
+            line-height: 1.4rem;
+            font-size: 0.6rem;
+            span{
+                margin-left: 0.6rem;
+                border-left: 0.1rem solid rgba(189, 165, 113, 1);
+                padding-left: 0.2rem;
+            }
+        }
+        .echarts{
+            height: 400px;
+            width: 100vw;
+            background: #fff;
+
+            margin-bottom:  6/@w;
+        }
+        .shop-items{
+            border-top: 0.1rem solid #f3f3f3;
+            background: #fff;
+            padding: 0px 16/@w ;
+            .item{
+                width:343/@w ;
+                height:67/@w ;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1/@w solid #f3f3f3;
+                .left{
+                    width: 15%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                .right{
+                    width: 85%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 1% 0;
+                    h6{
+                        font-size: 0.6rem;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+    .date-box{
+        display: flex;
+        align-items: center;
+        border-bottom: 1/@w solid #d9d9d9;
+        padding:0 10/@w 10/@w 10/@w;
+        .title{
+            width: 60/@w;
+            min-width: 60px;
+            font-size: 12/@w;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        
+        .statr-time,.end-time{
+            span{
+                height: 100%;
+                display: flex; 
+                .statr-time-box{
+                    height: 100%;
+                    border-radius: 2/@w;
+                    display: flex;
+                    width: 100%;
+                    background: none;
+                    outline: none;
+                    align-items: center;
+                    justify-content: space-around;
+                    border: 1/@w solid #d9d9d9;
+                }
+            }
+        }
+    }
+}

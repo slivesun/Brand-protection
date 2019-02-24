@@ -1,0 +1,45 @@
+.common-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-wrapper {
+  height: inherit;
+  .card-title {
+    color: #333;
+  }
+  .ant-card-body {
+    padding: 19px;
+    padding-top: 0;
+    .ant-list {
+      .ant-list-header {
+        padding-bottom: 0;
+      }
+      .row {
+        text-align: right;
+        &.body-row {
+          margin-top: 15px;
+        }
+        .ant-col-2 {
+          text-align: center;
+        }
+        .circle {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          background-color: #BDA571;
+          color: #fff;
+          border-radius: 50%;
+        }
+        .ellipsis {
+          display: inline-block;
+          width: 100%;
+          text-align: left;
+          .common-ellipsis;
+        }
+      }
+    }
+  }
+}

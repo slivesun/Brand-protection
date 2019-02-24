@@ -1,0 +1,256 @@
+.feedback{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: #fff;
+        .search-box{
+            display: flex;
+            padding: 20px;
+            flex-shrink: 0;
+            justify-content: space-between;
+            div{
+                a{
+                    .addgd{
+                        background-color: #108CEE;
+                        span{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .content-tab{
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 1;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 0px 20px 20px;
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+    }
+    .red-ck::before{
+        content: '•';
+        color: red;
+        padding-right: 10px;
+        margin-left: -15px;
+        vertical-align: text-bottom;
+    }
+    
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+.addfeedback{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: #fff;
+        padding: 50px;
+        .red-ck::before{
+            content: '*';
+            color: red;
+            padding-right: 10px;
+            margin-left: -15px;
+            vertical-align: text-bottom;
+        }
+        .length-alert{
+            position: absolute;
+            left: 389px;
+            bottom: 26px;
+            width: 100px;
+            text-align: right;
+            line-height: 20px;
+            color: #999;
+        }
+        .item{
+            display: flex;
+            display: flex;
+            align-items: end;
+            flex-shrink: 0;
+            padding-bottom: 20px;
+            .input,.textArea{
+                max-width:600px;
+                min-width: 300px;
+                width: 400px;
+            }
+            .text{
+                flex-shrink: 0;
+                padding-top: 3px;
+                width: 100px;
+            }
+        }
+        .info{
+            .textArea{
+                min-height: 150px;
+            }
+        }
+        .upload{
+            .ant-upload-list-item-actions{
+                a{
+                    display: none;
+                }
+            }
+        }
+        .buts{
+            padding-left: 100px;
+            .gdsubm{
+                background-color: #CFA972;
+                margin-right: 30px !important;
+                span{
+                    color: #fff;
+                }
+            }
+            .ant-btn{
+                margin-right: 20px;
+            }
+        }
+        
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+.infofeedback{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: #fff;
+        padding: 20px;
+        h2{
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d9d9d9;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        h3{
+            padding-bottom: 30px;
+            width: 70%;
+        }
+        .length-alert{
+            position: absolute;
+            left: 289px;
+            bottom: 26px;
+            width: 100px;
+            text-align: right;
+            line-height: 20px;
+            color: #999;
+        }
+        .item{
+            display: flex;
+            display: flex;
+            align-items: end;
+            flex-shrink: 0;
+            padding-bottom: 20px;
+            .input,.textArea{
+                max-width:600px;
+                min-width: 300px;
+                width: 400px;
+            }
+            
+        }
+        .info{
+            .textArea{
+                min-height: 150px;
+            }
+        }
+        .upload{
+            .ant-upload-list-item-actions{
+                a{
+                    display: none;
+                }
+            }
+        }
+        .buts{
+            .ant-btn{
+                margin-right: 20px;
+            }
+        }
+        .infolist{
+            .infolist-item{
+                width: 60%;
+                padding: 30px;
+                padding-top: 0px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #d9d9d9;
+                h6{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+                p{
+                    font-size:12px;
+                    padding-bottom: 10px;
+                    color: rgb(165, 165, 165);
+                }
+                .imgBox{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        margin: 20px 20px 0px 0px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}

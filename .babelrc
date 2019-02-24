@@ -1,0 +1,29 @@
+{
+    "presets": [
+        "env",
+        "stage-0",
+        "react"
+    ],
+    "plugins": [
+        [
+            "syntax-dynamic-import"
+        ],
+        [
+            "import-inspector",
+            {
+                "serverSideRequirePath": true
+            }
+        ],
+        [
+            "transform-decorators-legacy"
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css"
+            }
+        ]
+    ]
+}

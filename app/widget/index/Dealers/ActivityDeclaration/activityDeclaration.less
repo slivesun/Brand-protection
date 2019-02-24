@@ -1,0 +1,100 @@
+@grayColor: #d9d9d9;
+@bgColor: #f0f2f5;
+@blueColor: #1890ff;
+
+.activity-declaration-wrapper {
+  flex: 1;
+  font-size: 14px;
+  background-color: @bgColor;
+  display: flex;
+  flex-direction: column;
+  .top-header {
+      background-color: #fff;
+      padding: 20px;
+      .title {
+          font-size: 20px;
+          margin-top: 15px;
+          font-weight: 700;
+      }
+  }
+  .content {
+    span.red {
+      color: #f00;
+    }
+    flex: 1;
+    // padding: 0 20px;
+    background-color: @bgColor;
+    .shop-wrapper {
+      // margin-top: 20px;
+      .row {
+        margin-bottom: 20px;
+      }
+    }
+    .product-wrapper {
+      margin-top: 20px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          color: @blueColor;
+          cursor: pointer;
+        }
+        .red {
+          color: #f00;
+        }
+      }
+      .middle {
+        border: 1px dashed @grayColor;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        margin: 10px 0 20px;
+        padding: 20px 0;
+        .row {
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          .ant-col-8:nth-of-type(n+4) {
+            margin-top: 20px;
+          }
+        }
+      }
+      .bottom {
+        .row {
+          margin-bottom: 20px;
+          margin-top: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          .col {
+            padding-right: 40px;
+          }
+        }
+      }
+    }
+    .addNew {
+      background-color: #fff;
+      border: 1px dashed @grayColor;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+      color: #333;
+      margin-top: 20px;
+    }
+    .submit-wrapper {
+      background-color: #fff;
+      box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
+      padding: 10px 0 10px 20px;
+      // margin: 20px 0;
+      margin-top: 20px;
+      > .submit {
+        margin-right: 10px;
+      }
+    }
+  }
+  .copyright {
+    background-color: @bgColor;
+    padding: 30px; 
+  }
+}

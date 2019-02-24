@@ -1,0 +1,86 @@
+
+
+.ComplaintsAccount{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        padding: 10px;
+        background: #fff;
+        .ant-tabs-top{
+            .ant-tabs-content{
+                .ant-tabs-tabpane{
+                    .list-box{
+                        div{
+                            .ant-table-wrapper{
+                                .ant-spin-nested-loading{
+                                    .ant-spin-container{
+                                        .ant-table-default{
+                                            .ant-table-content{
+                                                .ant-table-body{
+                                                    table{
+                                                        tbody{
+                                                            tr{
+                                                                td{
+                                                                    font-size: 14px !important;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .list-box{
+            background: #fff;
+            padding: 10px 10px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 9999;
+            flex-shrink: 0;
+            overflow: auto;
+            height: 100%;
+            justify-content: space-between;
+            .unphone{
+                cursor: pointer;
+                color: red;
+                padding-left:10px; 
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+    }    
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}

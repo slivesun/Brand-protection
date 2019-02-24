@@ -1,0 +1,93 @@
+.DepartmentManagement{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    // .Breadcrumb{
+    //     background: #fff;
+    //     padding: 10px 20px;
+    //     margin-bottom: 20px;
+    // }
+    .ant-tree-node-content-wrapper{
+        width: 98%;
+    }
+   
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        background: #fff;
+        padding: 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        .add-box{
+            .add-but{
+                width: 100%;
+            }
+        }
+        .tree-list{
+            .ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle {
+                
+                height: 40px;
+                line-height: 40px;
+               
+            }
+            ul{
+                width: 100%;
+                
+            }
+            
+            li[role=treeitem]{
+                display: flex;
+                flex-wrap: wrap;
+                .ant-tree-node-content-wrapper{
+                    display: flex;
+                    flex-grow: 1;
+                    height: 40px;
+                    align-items: center;
+                    cursor: auto;
+                    width: 90%;
+                }
+                .ant-tree-title{
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+            .leaf{
+                .ant-tree-switcher{
+                    opacity: 0;
+                }
+            }
+            .item{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                    flex-grow: 1;
+                    height: 40px;
+                    align-items: center;
+                    cursor: auto;
+                    .ant-col-9{
+                        height: 100%;
+                        line-height: 40px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .ant-col-4 {
+                        line-height: 100%;
+                    }
+            }
+        }
+    }
+    
+    .Copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .ant-tree li .ant-tree-node-content-wrapper{
+        height: 63px;
+        line-height: 63px;
+    }
+    
+}

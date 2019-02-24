@@ -1,0 +1,96 @@
+#root .right-box {
+    overflow: auto;
+}
+.data-search{
+    background-color: #f0f2f5;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .ant-table-tbody > tr > td {
+        padding: 16px 16px;
+        word-break: break-word;
+    }
+    .Breadcrumbbox{
+        background: white;
+        padding-left: 20px;
+        
+        .Breadcrumb{
+            .cursor{
+                cursor: pointer;
+            }
+            padding: 20px 0px 14px;;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+    }
+    animation: showSearch 0.8s;
+    .content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+
+        .search-box{
+            margin: 20px;
+            background: white;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            height: 60px;
+            flex-shrink: 0;
+            justify-content: space-between;
+            .search-input{
+                flex-basis: 55%;
+                margin-left: 10%;
+            }
+            
+        }
+        .table-box{
+            margin: 0px 20px;
+            background: white;
+            border-radius: 4px;
+            padding: 20px;
+            margin-top: 0px;
+            // flex-shrink: 0;
+            flex-grow: 1;
+            overflow: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            // margin-bottom:0px;
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+@keyframes showSearch{
+    0%   {
+        display: flex;
+        opacity: 0;
+    }
+    25%  {
+        opacity: 0.30;
+    }
+    50%  {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}

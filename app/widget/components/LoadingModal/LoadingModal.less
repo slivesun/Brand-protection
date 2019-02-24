@@ -1,0 +1,95 @@
+#LoadingModal{
+    background: rgba(0,0,0,0.15);
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+    .flexbox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .ant-spin-text{
+            font-size: 13px;
+            padding-top: 16px;
+        }
+    } 
+
+
+
+    .ant-spin-lg .ant-spin-dot i{
+        animation:myfirst 2s infinite;
+        -moz-animation:myfirst 2s infinite; 
+        -webkit-animation:myfirst 2s infinite;
+        -o-animation:myfirst 2s infinite;
+        animation-direction:alternate;
+        -moz-animation-direction:alternate;
+        -webkit-animation-direction:alternate;
+        -o-animation-direction:alternate;
+        opacity: 1;
+    }
+    .ant-spin-text p{
+        animation:myfirst2 2s infinite;
+        -moz-animation:myfirst2 2s infinite; 
+        -webkit-animation:myfirst2 2s infinite;
+        -o-animation:myfirst2 2s infinite;
+        animation-direction:alternate;
+        -moz-animation-direction:alternate;
+        -webkit-animation-direction:alternate;
+        -o-animation-direction:alternate;
+    }
+    @keyframes myfirst2
+    {
+        0%   {color: rgb(123, 255, 0);}
+        100% {color: rgb(255, 0, 200);}
+    }
+
+    @-moz-keyframes myfirst2 /* Firefox */
+    {
+        0%   {color: rgb(123, 255, 0);}
+        100% {color: rgb(255, 0, 200);}
+    }
+
+    @-webkit-keyframes myfirst2 /* Safari and Chrome */
+    {
+        0%   {color: rgb(123, 255, 0);}
+        100% {color: rgb(255, 0, 200);}
+    }
+
+    @-o-keyframes myfirst2 /* Opera */
+    {
+        0%   {color: rgb(123, 255, 0);}
+        100% {color: rgb(255, 0, 200);}
+    }
+
+
+    @keyframes myfirst
+    {
+        0%   {background: rgb(123, 255, 0);}
+        100% {background: rgb(255, 0, 200);}
+    }
+
+    @-moz-keyframes myfirst /* Firefox */
+    {
+        0%   {background: rgb(123, 255, 0);}
+        100% {background: rgb(255, 0, 200);}
+    }
+
+    @-webkit-keyframes myfirst /* Safari and Chrome */
+    {
+        0%   {background: rgb(123, 255, 0);}
+        
+        100% {background: rgb(255, 0, 200);}
+    }
+
+    @-o-keyframes myfirst /* Opera */
+    {
+        0%   {background: rgb(123, 255, 0);}
+        
+        100% {background: rgb(255, 0, 200);}
+    }
+}

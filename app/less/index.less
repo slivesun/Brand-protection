@@ -1,0 +1,106 @@
+@import './common/common.less';
+@import '../widget/components/Nav/nav.less';
+@import '../widget/components/Header/header.less';
+
+@import '../widget/index/Commits/commits.less';
+@import '../widget/index/MenuEdit/menuedit.less';
+@import '../widget/index/Role/role.less';
+@import '../widget/index/Feedback/feedback.less';
+@import '../widget/index/Administrator/CategorySettings/CategorySettings.less';
+@import '../widget/index/Administrator/ServiceList/servicelist.less';
+@import '../widget/index/Administrator/BrandList/brandlist.less';
+@import '../widget/index/Administrator/DealerList/dealerlist.less';
+@import '../widget/index/Administrator/Home/home.less';
+@import '../widget/index/Administrator/ClientInfo/clientinfo.less';
+@import '../widget/index/Administrator/DataSearch/datasearch.less';
+@import '../widget/index/Administrator/DealerDetail/dealerDetail.less';
+@import '../widget/index/Administrator/Department/Department.less';
+@import '../widget/index/Administrator/SetDictionary/SetDictionary.less';
+
+@import '../widget/index/Brand/ClientCheck/clientcheck.less';
+@import '../widget/index/Brand/ExpiringClientList/expiringclientlist.less';
+@import '../widget/index/Brand/PendingClient/pendingclient.less';
+@import '../widget/index/Brand/PriceNotice/pricenotice.less';
+@import '../widget/index/Brand/CategorySelect/categoryselect.less';
+@import '../widget/index/Brand/ProductInfo/productinfo.less';
+@import '../widget/index/Brand/Home/home.less';
+@import '../widget/index/Brand/CustomerOverview/CustomerOverview.less';
+@import '../widget/index/Brand/CustomFields/CustomFields.less';
+@import '../widget/index/Brand/DepartmentManagement/DepartmentManagement.less';
+@import '../widget/index/Brand/AccountManagement/accountmanagement.less';
+@import '../widget/index/Brand/PriceMonitor/pricemonitor.less';
+@import '../widget/index/Brand/MonitorInfo/monitorinfo.less';
+@import '../widget/index/Brand/OrderMonitor/ordermonitor.less';
+
+@import '../widget/index/Brand/ActivityInspect/activityInspect.less';
+@import '../widget/index/Brand/ActivityDetails/activityDetails.less';
+@import '../widget/index/Brand/ActivityReview/activityReview.less';
+@import '../widget/index/Brand/ActivityPublic/activityPublic.less';
+@import '../widget/index/Brand/UrlMonitor/urlmonitor.less';
+@import '../widget/index/Brand/WhiteList/WhiteList.less';
+@import '../widget/index/Brand/ClientDetail/clientDetail.less';
+@import '../widget/index/Brand/SalesDataDetail/salesDataDetail.less';
+@import '../widget/index/Brand/ClientActivityDetail/clientActivityDetail.less';
+@import '../widget/index/Brand/ClientInspectDetail/clientInspectDetail.less';
+
+@import '../widget/index/Dealers/ActivityInformation/activityInformation.less';
+@import '../widget/index/Dealers/BrandActivityPublicity/brandActivityPublicity.less';
+@import '../widget/index/Dealers/ActivityDeclaration/activityDeclaration.less';
+@import '../widget/index/Dealers/ActivityInspectionPublicity/activityInspectionPublicity.less';
+@import '../widget/index/Dealers/ApprovalQuery/approvalQuery.less';
+@import '../widget/index/Dealers/ActivityDetails/activityDetails.less';
+@import '../widget/index/Dealers/Home/home.less';
+
+
+
+@import '../widget/index/Service/ActivityInspect/activityInspect.less';
+@import '../widget/index/Service/ActivityInspectDetail/activityInspectDetail.less';
+@import '../widget/index/Service/PriceMonitorSetting/pricemonitorsetting.less';
+@import '../widget/index/Service/ProductClass/productclass.less';
+@import '../widget/index/Service/PluginSummary/pluginSummary.less';
+@import '../widget/index/Service/LinkMarking/linkMarking.less';
+@import '../widget/index/Service/LinkMarkingDetail/linkMarkingDetail.less';
+
+@import '../widget/index/TaobaoComplaint/taobaoComplaint.less';
+@import '../widget/index/ComplaintReport/complaintReport.less';
+@import '../widget/index/SetComplaintReport/setComplaintReport.less';
+
+@import '../widget/index/KeywordMonitor/keywordMonitor.less';
+@import '../widget/index/KeywordMonitorDetail/keywordMonitorDetail.less';
+@import '../widget/index/AddKeywordMonitor/addKeywordMonitor.less';
+@import '../widget/index/MonitorLowPriceScreenshot/monitorLowPriceScreenshot.less';
+@import '../widget/index/MonitorDataAnalysis/monitorDataAnalysis.less';
+
+html,body{
+    height: 100%;
+    .ant-table-header,.ant-table-body{
+        overflow-y: hidden !important;
+    }
+}
+#root{
+    display: flex;
+    height: 100%;
+    .right-box{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .Copyright{
+        text-align: center;
+        // font-size:13px; 
+    }
+}
+.full-spin{
+    .ant-modal-content{
+        box-shadow: none;
+    }
+}
+
+
+.text-overflow-hidden {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}

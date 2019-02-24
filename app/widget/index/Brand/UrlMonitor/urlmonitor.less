@@ -1,0 +1,250 @@
+.urlmonitor{
+    sup{
+        position: absolute;
+        left: 8px;
+        top: -4px;
+        width: max-content;
+    }
+}
+.urlmonitor,.addmonitor,.infomonitor{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .search-box{
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        // margin: 0px 20px 20px 20px;
+        margin-bottom: 10px;
+        .input-box{
+            display: flex;
+            flex-grow: 1;
+            padding-bottom: 20px;
+            .item{
+                display: flex;
+                width: 30%;
+                padding-right: 3%;
+                .ant-select{
+                    outline: none;
+                }
+                .lab{
+                    padding: 10px;
+                    flex-shrink: 0;
+                    // padding-right: 30px;
+                    text-align: left;
+                    font-size: 14px;
+                }
+            }
+        }
+        .butbox{
+            text-align: right;
+        }
+    }    
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: white;
+        padding: 20px;
+        .buts{
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 0;
+            a:nth-child(1){
+                margin-right: 20px;
+            }
+        }
+        .content-tab{
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 1;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 0px 0px 20px 0px;
+           
+            .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+                
+                vertical-align: middle;
+            }
+            .ant-table-tbody > tr > td {
+                padding: 20px 0 16px 0;
+            }
+            .ant-table-tbody{
+                
+                tr{
+                    td{
+                        font-size: 14px;
+                        font-weight: 400;
+                        p{
+                            span{
+                                color: #fff;
+                                padding: 2px 4px;
+                                background-color: #2FC25B;
+                                border-radius: 3px;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .tb{
+                color: red;
+                font-size: 20px;
+                margin-right: 10px;
+                vertical-align: -2px;
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+        
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .red::before{
+        color:  red;
+        content: '*';
+    }
+}
+.edit-item-box{
+    .red::before{
+        color:  red;
+        content: '*';
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        .title{
+            color: #333;
+            flex-shrink: 0;
+            padding: 0px 10px;
+        }
+        p{
+            flex-grow: 1;
+        }
+    }
+}
+.addmonitor{
+    .content{
+        padding: 40px 30px;
+        h4{
+            color: #333;
+            font-size: 16px;
+            padding-bottom: 31px;
+        }
+        .p{
+            width: 400px;
+            height:28px;
+            flex-shrink: 0;
+            padding: 5px 2px;
+            
+            display: flex;
+            font-size: 12px;
+            align-items: center;
+            color: #faad14;
+            background:rgba(250,173,20,0.1);
+            margin-left: 77px;
+            margin-bottom: 10px;
+            .icon-sound{
+                padding: 0px 5px;
+            }
+        }
+        .url-list{
+            display: flex;
+            flex-shrink: 0;
+            .tit{
+                color: #333;
+                font-size: 14px;
+                align-self: center;
+                align-self: flex-start;
+                padding-top: 9px;
+            }
+            .item{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                margin-bottom: 18px;
+                .url{
+                    width: 400px;
+                    flex-shrink:0;
+                }
+                .zw{
+                    width: 20px;
+                    text-align: center;
+                    flex-shrink:0;
+                }
+                .num{
+                    width: 120px;
+                    flex-shrink:0;
+                }
+                .anticon{
+                    margin-left: 20px;
+                    cursor: pointer;
+                    color: #D4D4D4;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .addbut{
+            width: 100%;
+        }
+    }
+}
+.infomonitor{
+    .item-info{
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        margin: 0px 20px 20px 20px;
+        padding: 20px;
+        background: #fff;
+        h5{
+            font-size:18px;
+            color:rgba(51,51,51,1); 
+            margin-bottom: 16px;
+        }
+        .item{
+            display: flex;
+            font-size: 14px;
+            color: #666;
+            line-height: 34px;
+            span{
+                color: #333;
+            }
+        }
+    }
+    .content{
+        margin: 0 20px;
+        .content-tab{
+            padding: 0px;
+            margin-top: 20px;
+            sup{
+                margin-top: 0px;
+                margin-left: 10px;
+            }
+        }
+    }
+    
+}

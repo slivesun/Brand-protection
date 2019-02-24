@@ -1,0 +1,98 @@
+.MessageCenter{
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    flex-grow: 1;
+    // justify-content: center;
+    // align-items: center;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    // padding: 20px 40px;
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .ChangeHistoryBOX{
+        // overflow-y: scroll;
+        overflow: auto;
+        background: #fff;
+        flex: 1;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        
+        // .ant-table-tbody > tr > td:nth-child(4){
+        //         width: 200px;
+        //         overflow: hidden; 
+        //         text-overflow: ellipsis;
+        //         white-space: nowrap;
+        //         position: relative;
+        //     }
+        
+        .ChangeBody{
+            width: 100%;
+            padding: 10px 20px;
+            .changetit{
+                margin-bottom:16px;
+                margin-top: 10px;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #cae1ef;
+                background: #e5f7ff;
+                span{
+                    font-size: 14px;
+                    span{
+                        color: #4889c3;
+                    }
+                }
+            }
+           
+        }
+      
+    }
+    .Custis{
+        text-align:center;
+        font-size: 14px;
+        color: #999;
+        margin-top: 10px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        flex-shrink: 0;
+        .info{
+            font-size: 14px;
+            color: #999;
+            width: auto;
+            flex: 1;
+        }
+        .ant-pagination {
+            flex: 2;
+            text-align: right;
+        }
+    }
+    .Copyright{
+        margin-top: 20px;
+    }
+    .WEIDU:after {
+        content: "●";
+        margin-left: 10px;
+        color: red;
+    }
+    .WEIDU:hover{
+        
+        color: #108cee;
+    }
+    .YIDU{
+        
+        cursor: pointer;
+    }
+    .YIDU:hover{
+        
+        color: #108cee;
+    }
+}

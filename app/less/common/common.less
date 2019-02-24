@@ -1,0 +1,85 @@
+@import './reset.css';
+@import './variables.less';
+@import './component.less';
+.red{
+    color: red;
+}
+.required::before{
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 14px;
+    color: #f5222d;
+}
+.full-spin{
+    .ant-modal-content{
+        background: none !important;
+    }
+}
+.TYPE1-BUTTON{
+    background:#e7f3fd !important;
+    color: #108CEE !important;
+    border: none !important;
+}
+.A-COLOR{
+    color: #1890ff !important;
+}
+body{
+	.ant-modal-footer{
+		padding: 10px 23px;
+	}
+
+/* 修改新增属性 */
+
+
+    .alert-item-confirm{
+        .ant-modal-content{
+            .ant-modal-close{
+                display: block !important;
+                .ant-modal-close-x{
+                    width: 44px !important;
+                    height: 44px !important;
+                    line-height: 44px !important;
+                }
+            }
+            .ant-modal-body{
+                position: relative;
+                padding: 55px 32px 24px !important;
+                .ant-modal-confirm-body-wrapper{
+                    .ant-modal-confirm-body{
+                        margin-left: 26px !important;
+                        .anticon-question-circle{
+                            position: absolute;
+                            top: 65px;
+                            left: 66px;
+                        }
+                        .ant-modal-confirm-content{
+                            div{
+                                .Dtitle{
+                                    font-weight: 600 !important;
+                                    font-size: 16px;
+                                    padding-bottom: 3px;
+                                }
+                                .tips{
+                                    position: absolute;
+                                    top: 14px;
+                                    left: 20px;
+                                }
+                                .pline{
+                                    width: 414px;
+                                    height: 1px;
+                                    position: absolute;
+                                    top: 46px;
+                                    left: 0;
+                                    border-bottom: 1px solid #E8EBEC;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

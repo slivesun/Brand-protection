@@ -1,0 +1,115 @@
+@qualifyColor: #1890ff;
+@disQualifyColor: #f00;
+
+.service-activity-inspect-detail {
+  // flex: 1;
+  background-color: #f2f2f9;
+  font-size: 14px;
+  // display: flex;
+  flex-direction: column;
+  header {
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 12px;
+  }
+  main {
+    flex: 1;
+    // padding: 20px;
+    .condition-wrapper {
+      background-color: #fff;
+      padding: 20px 0 0 20px;
+      .date {
+        padding-left: 20px;
+      }
+      .custom-tab {
+        margin-top: 20px;
+        .ant-tabs-bar {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .inspect-item-wrapper {
+      background-color: #fff;
+      margin-top: 20px;
+      padding: 20px;
+      .head {
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+      }
+      .card {
+        .ant-card-head {
+          background-color: #f3f7ff;
+          padding: 0 20px;
+        }
+        .ant-card-body {
+          padding: 20px;
+          .baseinfo {
+            .ant-col-8:nth-of-type(n+4) {
+              margin-top: 20px;
+            }
+          }
+          .upload-wrapper {
+            .ant-col-8 {
+              display: flex;
+              .upload-icon {
+                width: 72px;
+                height: 72px;
+                border: 1px dashed #d9d9d9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin-left: 11px;
+                cursor: pointer;
+                &::after, &::before {
+                  content: "";
+                  display: block;
+                  width: 47px;
+                  height: 2px;
+                  background-color: #d9d9d9;
+                  position: absolute;
+                }
+                &::after {
+                  transform: rotateZ(90deg);
+                }
+              }
+            }
+          }
+        }
+      }
+      .inspect-form {
+        margin-top: 20px;
+        .customeBtn {
+          cursor: pointer;
+          background-color: #fff;
+          height: 32px;
+          padding: 0 15px;
+          line-height: 1.5;
+          outline: 0;
+          border: 1px solid #d9d9d9;
+          border-radius: 4px;
+        }
+        .customeBtn.qualify {
+          background-color: @qualifyColor;
+          border-color: @qualifyColor;
+          color: #fff;
+        }
+        .customeBtn.disQualify {
+          background-color: @disQualifyColor;
+          border-color: @disQualifyColor;
+          color: #fff;
+        }
+      }
+      .inspect-btn {
+        text-align: right;
+        margin-top: 20px;
+      }
+    }
+    .empty-text {
+      text-align: center;
+      margin: 15px;
+    }
+  }
+  footer {}
+}

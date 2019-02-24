@@ -1,0 +1,51 @@
+.client-inspect-detail {
+  background-color: #fff;
+  padding: 20px;
+  .baseinfo {
+    background-color: #F8F9FD;
+    padding: 20px;
+    p {
+      font-size: 16px;
+    }
+    p:not(:first-of-type) {
+      margin-top: 20px;
+    }
+    .ant-row {
+      .ant-col-8:nth-of-type(n+4) {
+        margin-top: 20px;
+      }
+    }
+    .overflow-hidden {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 10px;
+    }
+  }
+  .inspect-item {
+    margin-top: 20px;
+    .ant-card-head {
+      padding: 0 20px;
+      background-color: #f3f7ff;
+    }
+    .ant-card-body {
+      padding: 20px;
+      .ant-tag {
+        box-sizing: border-box;
+        padding: 0px 17px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .ant-row-flex:first-of-type {
+        .ant-col-8 {
+          display: flex;
+          &:nth-of-type(n+4) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

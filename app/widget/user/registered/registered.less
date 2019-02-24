@@ -1,0 +1,311 @@
+@UIheight : 1080%;
+@UIwidth : 1918%;
+@contenWidth:1240/@UIwidth*100;
+@contenHeight:790/@UIwidth*100;
+.registered{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(../../../img/Registration_information.jpg) no-repeat;
+    background-size: cover;
+
+    header{
+        height: 86/@UIheight*100;
+        line-height: 86/@UIheight*100;
+        min-height: 70px;
+        padding: 0px 70px;
+        background:rgba(255,255,255,0.6);
+        flex-shrink:0;
+        display: flex;
+        align-items: center;
+        h1{
+            font-size:16px;
+            color:rgba(102,102,102,1);
+            padding: 0px 10px;
+        }
+        
+    }
+   .topwd{
+       margin-left: -15px;
+   }
+   .Gopwd{
+       margin-left: -42px;
+   }
+   .NOponetits{
+       margin-left: -100px;
+        text-align: center;
+        margin-top: 50px;
+        h4{
+            font-size:18px;
+            color: #333;
+        }
+        img{
+        width:48px;
+            height:48px; 
+        }
+        .NOponeti{
+            text-align: left;
+            margin-left: 180px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            p{
+                color: #999999;
+                font-size: 12px;
+                margin-top: 25px;
+            }
+        }
+        
+    }
+    .TJBOX{
+        position: relative;
+        .TJXX{
+            position: absolute;
+            right: -20px;
+            top: 4px;
+        }
+    }
+    .content{
+        width: @contenWidth;
+        min-width: 900px;
+        height: @contenHeight;
+        min-height: 580px;
+        background:rgba(255,255,255,0.8);
+        margin: auto;
+        flex-shrink:10;
+        .title{
+            font-size:20px;
+            color:rgba(51,51,51,1);
+            padding: 3% 5%;
+        }
+        .info{
+            text-align: center;
+            padding-top:10%;
+            .company{
+                font-size: 30px;
+                padding-bottom: 1%;
+            }
+            .prompt{
+                padding: 5px 0 50px;
+            }
+            .href-box{
+                display: inline-block;
+                text-align: left;
+                strong{
+                    padding-bottom: 30px;
+                    display: block;
+                }
+                p{
+                    font-size: 13px;
+                    margin: 0px 0px 10px;
+                    span{
+                        color: #666;
+                        margin-right: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .Details{
+        height: 100px;
+    }
+
+    .ant-steps-item-process .ant-steps-item-icon {
+        background: #CFA972;
+        border: 1px solid #CFA972;
+    }
+    .ant-steps-item-finish .ant-steps-item-icon {
+        background: #CFA972;
+        border: 1px solid #CFA972;
+        color: #fff;
+    }
+    .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+        color: #fff;
+    }
+    .regbox{
+        width: @contenWidth;
+        min-width: 900px;
+        height: @contenHeight;
+        min-height: 580px;
+        background:rgba(255,255,255,0.8);
+        margin: auto;
+        flex-shrink:10;
+        position: relative;
+        .stepbox{
+            padding: 3% 5%;
+            
+            .stepbox-description{
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    .copyright{
+        line-height: 67px;
+        text-align: center;
+    }
+
+    .topsxs{
+        float: left;
+         .ant-input {
+        width: 199px;
+        height: 40px;
+            }
+        }
+    .get-code {
+        border: none;
+        width: 112px;
+        height: 40px;
+        border: 1px solid #C6C6C6;
+        background: #fff;
+        border-radius: 2px;
+        margin-left: 5px;
+        cursor: pointer;
+        float: left;
+    }
+    .ForgetTS{
+        width: 400px;
+        height: 70px;
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        span:nth-child(1){
+            display: block;
+            width: 16px;
+            float: left;
+            height: 42px;
+            margin-left: 45px;
+            margin-right: 5px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+        span:nth-child(2){
+            width: 281px;
+            display: block;
+            float: left;
+            text-align: left;
+        }
+
+    }
+    .forgetmm{
+        width:180px;
+        height:96px;
+        background:rgba(255,255,255,1);
+        border-radius:2px;
+        box-shadow:0px 2px 8px rgba(0,0,0,0.16);
+        position: absolute;
+        text-align: left;
+        right: -80px;
+        top: 50%;
+        margin-top: -48px;
+        padding: 5px;
+        div:nth-child(1){
+            font-size:14px;
+            color:rgba(245,34,45,1);
+        }
+        div:nth-child(2){
+            font-size:14px;
+            color:rgba(102,102,102,1);
+        }
+    }
+    .TJBTN{
+        background: #CFA972;
+        color: #fff;
+        border: 1px solid #CFA972;
+        width:104px;
+        height:40px;
+        margin-left: 50px;
+    }
+    .userTS{
+        width:320px;
+        height:40px;
+        text-align: left;
+        background:rgba(255,230,229,1);
+        border-radius:2px;
+        padding: 10px 10px;
+        font-size: 14px;
+        margin-left: 50px;
+        border: 1px solid #E55C63;
+        margin-bottom: 5px;
+        img{
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+        }
+    }
+    .regisBox{
+        position: absolute;
+        left: 50%;
+        width: 500px;
+        margin-left: -200px;
+        padding: 10px 20px;
+        .FORMtit{
+            font-size:14px;
+            color:rgba(51,51,51,1);
+            line-height:40px;
+            margin-right: 5px;
+            margin-top: 10px;
+            height: 40px;
+            width: 100%;
+            float: left;
+            h4{
+                font-size: 16px;
+                color: #333;
+                font-weight: bold;
+                margin-left: -20px;
+            }
+            
+            .FHBTN{
+                margin-left: 60px;
+                background: #fff;
+                color: #999;
+                border: 1px solid #d9d9d9;
+                width:72px;
+                font-size: 16px;
+                height:40px;
+            }
+            .FORMus{
+                width: auto;
+                height: 40px;
+                float: left;
+                font-size: 14px;
+                margin-right: 10px;
+            }
+            .fos{
+                margin-left:-20px;
+            }
+            .fox{
+                margin-left: -10px;
+            }
+            .fob{
+                margin-left: -5px;
+            }
+            .tops{
+                width: 320px;
+                height: 40px;
+                float: left;
+            }
+            .topsx{
+                width: 320px;
+                height: 60px;
+                float: left;
+                .tops{
+                    border-radius:2px;
+                    border: 1px solid #d9d9d9;
+                }
+            }
+        }
+        
+    }
+   .ant-progress-text{
+       color: #fff;
+   }
+}

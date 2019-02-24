@@ -1,0 +1,29 @@
+.CustomerOverview{
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    flex-grow: 1;
+    
+    overflow: auto;
+    #container{
+        flex: 1;
+    }
+    .scale-box{
+        overflow: auto;
+        position: relative;
+        .bs-box{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            padding: 10px 20px;
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            .anticon{
+                font-size: 14px;
+            }
+        }
+    }
+    
+}

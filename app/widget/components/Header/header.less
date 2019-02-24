@@ -1,0 +1,237 @@
+.header{
+    border-bottom: 1px solid rgb(240, 242, 245);
+    width: 100%;
+    // height: 60px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    .logout{
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        background: url(../../../img/icon_top_Workorde_thr.png) no-repeat center;
+        &:active{
+            background: url(../../../img/icon_top_Work_orde2.png) no-repeat center;
+        }
+    }
+    .left-info{
+        align-items: center;
+        display: flex;
+        .toggleCollapsed{
+            align-self: center;
+            margin: 0px !important;
+            background: none;
+            border: none;
+            box-shadow: none;
+            padding: 0px;
+            margin-left: 20px !important;
+            i{
+                font-size: 24px;
+                color: #bda571;
+            }
+        }
+        .anticon-swap-left,.anticon-swap-right{
+            font-size: 30px;
+            width: 30px;
+            height: 30px;
+            color: red;
+            border-radius:0px 0px 15px 0px; 
+            background: rgb(0, 0, 0);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .switch-brand-wrapper {
+            margin-left: 30px;
+            div[role='combobox'] {
+                border: none;
+                &:focus {
+                    box-shadow: 0 0 0 transparent;
+                }
+            }
+            
+        }
+    }
+    .right-user{
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        .header-feedback{
+            margin-right: 30px;
+            a{
+                -webkit-user-select:none;
+                -moz-user-select:none;
+                -ms-user-select:none;
+                user-select:none;
+                color: #333333;
+                i{
+                    color: #B49E7A;
+                }
+            }
+            
+        }
+        .header-message{
+            margin-right: 30px;
+            a{
+                -webkit-user-select:none;
+                -moz-user-select:none;
+                -ms-user-select:none;
+                user-select:none;
+                color: #333333;
+                i{
+                    color: #B49E7A;
+                }
+            }
+            .ant-popover-content{
+                width: 400px;
+            }
+        }
+        .username{
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: #333333;
+            span{
+                width: 35px;
+                height: 35px;
+                background: #B49E7A;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 50%;
+                color: #fff;
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        }
+        .anticon-logout{
+            font-size: 22px;
+            cursor: pointer;
+            padding-left: 30px;
+            color: #B49E7A;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+.header-feedback-Popover{
+    .ant-popover-inner-content{
+        padding: 0px;
+    }
+    .all-message-box{
+        border-top: 1px solid #e8e8e8;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+    .items{
+        width: 400px;
+        max-height: 300px;
+        margin: 0px auto;
+        overflow-y:auto;
+        padding:0px 13px;
+        .item{
+            height: 94px;
+            border-bottom: 1px solid #e8e8e8;
+            h6{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 40px;
+                font-size: 16px;
+            }
+            p{
+                line-height: 28px;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}
+.SUMBtn{
+    border: none;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.MessageListLI{
+    padding: 10px 0;
+    display: flex;
+    .MessageListSpana{
+        flex: 1;
+        float: left;
+        text-align: center;
+        b{
+            font-size: 14px;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.65);
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            text-align: center;
+            background: #ccc;
+            color: #fff;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            vertical-align: middle;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 50%;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    .MessageListSpanb{
+        flex: 4;
+        float: left;
+        h5{
+            font-size: 14px;
+            cursor: pointer;
+            color: #565c5f;
+        }
+        .MessageListPA{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            height: 40px;
+        }
+        p{
+            color: #818a8f;
+            font-size: 12px;
+        }
+    }
+}
+.MessageListLI:hover{
+    background: #e6f7ff;
+}
+    .STATUSBUT{
+        padding: 1px 6px;
+       
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+    .APPLYING{
+        color: #FAAD14;
+        border: 1px solid #FAAD14;
+    }
+    .DISAGREE{
+        color: red;
+        border: 1px solid red;
+    }
+    .EXPIRE{
+        color: rgb(189, 84, 14);
+        border: 1px solid  rgb(189, 84, 14);
+    }
+    .DISABLE{
+        color: rgb(252, 84, 84);
+        border: 1px solid rgb(250, 58, 58);
+    }

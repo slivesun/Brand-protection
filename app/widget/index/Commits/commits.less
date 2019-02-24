@@ -1,0 +1,32 @@
+.commits{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: #fff;
+        padding: 50px;
+        .ant-timeline-item-head-custom{
+            top: 22px !important;
+        }
+        .ant-card-type-inner .ant-card-head{
+            background: rgba(1, 1, 1, 0)
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}

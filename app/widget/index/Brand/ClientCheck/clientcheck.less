@@ -1,0 +1,259 @@
+@import '../../../components/SetTable/settable.less';
+.clientcheck{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        padding: 16px 0px;
+        word-break: break-word;
+        white-space: nowrap;
+    }
+    .ant-table-thead > tr > th {
+        background-color: #F3F7FF;
+        padding: 3px 0;
+    }
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        background: #fff;
+        padding: 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        .tab-a-text{
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 28px;
+        }
+        .WRONG_NAME{
+            font-size: 12px;
+            background:#fef4f4;
+            padding: 5px;
+            border-radius: 3px;
+            color: #F5222D;
+        }
+        .UN_INVITED{
+            font-size: 12px;
+            background:#fafafa;
+            padding: 5px;
+            border-radius: 3px;
+            color: #999;
+        }
+        .CON_EXPIRE{
+            font-size: 12px;
+            background: #fffbf3;
+            padding: 5px;
+            border-radius: 3px;
+            color:#FAAD14;
+        }
+        .WAIT_APPROVE{
+            font-size: 12px;
+            background: rgba(150, 197, 250, 1);
+            padding: 5px;
+            border-radius: 3px;
+            color:rgb(53, 147, 255);
+        }
+        .content-tab{
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 1;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 0px 10px 20px 10px;
+            .action{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-end;
+                padding-right: 20px;
+                .anticon-setting{
+                    color: #2794ff;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .open::before{
+            color:  #52C41A;
+            content: '●';
+        }
+        .close::before{
+            color:  rgb(196, 46, 26);
+            content: '●';
+        }
+        .button-box{
+            padding: 10px;
+            display: flex;
+            padding-right: 10px;
+            flex-shrink: 0;
+            justify-content: space-between;
+            .action{
+                button{
+                    margin: 0px !important;
+                    margin-right: 10px !important;
+                    border-radius: 2px !important;
+                }
+            }
+            .info{
+                align-items: center;
+                display: flex;
+                button{
+                    margin: 0px !important;
+                    margin-left: 10px !important;
+                }
+                a{
+                    font-size: 14px;
+                    margin-right: 15px;
+                }
+                .anticon-setting {
+                    background: #e7f3fd;
+                    color: #108cee;
+                    padding: 5px;
+                    border-radius: 2px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .search-box{
+            display: flex;
+            padding-top: 20px;
+            flex-shrink: 0;
+            flex-direction: column;
+            padding: 0;
+            .input-box{
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                .item{
+                    display: flex;
+                    width: 33%;
+                    padding-right: 10px;
+                    .seh{
+                        border: 1px solid #108CEE !important;
+                        span{
+                            color: #108CEE;
+                        }
+                    }
+                    .lab{
+                        padding: 10px;
+                        font-size: 14px;
+                        min-width: 100px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .butbox{
+                text-align: right;
+            }
+            
+        }
+        .add-all{
+            padding: 30px 10px 5px;
+            flex-shrink: 0;
+            button{
+                margin-right: 10px;
+            }
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            flex-shrink: 0;
+            .info{
+                font-size: 14px;
+                color: #999;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .table-tb-box{
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+.dropdownaddclient{
+    display: none;
+    
+}
+.Selectbox{
+    display: flex;
+    p{
+        flex-shrink: 0;
+        padding: 10px;
+        width: 120px;
+        text-align:right;
+        font-weight: bold;
+    }
+    .addclient{
+        width: 390px !important;
+        // li{
+        //     width: 100%;
+        //     display: block;
+        // }
+        .ant-select-selection--multiple .ant-select-selection__rendered{
+            height: 300px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin-right: 0px;
+        }
+        .ant-select-selection__placeholder{
+            top: 16px;
+        }
+    }
+}
+.alertbox{
+    display: flex;
+    color: #999;
+
+    p{
+        flex-shrink: 0;
+        padding: 10px;
+        width: 120px;
+        text-align:right;
+        &:nth-child(2){
+            width: 390px;
+            flex-shrink: 1;
+            text-align: left;
+            padding: 10px 0px;
+        }
+    }
+    
+}
+
+.inviteLinkbox{
+    .item{
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        padding-right: 30px;
+        .title{
+            width: 100px;
+            text-align: right;
+            font-weight: bold;
+        }
+        p{
+            flex-grow: 1;
+        }
+    }
+}
+.boxModal{
+    .ant-modal{
+        width: 600px !important;
+    }
+}
+

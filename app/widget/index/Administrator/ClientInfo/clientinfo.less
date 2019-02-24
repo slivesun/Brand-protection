@@ -1,0 +1,289 @@
+.clientinfo{
+    background-color: #f0f2f5;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .nowrap{
+        white-space: nowrap;
+    }
+    .Breadcrumbbox{
+        background: white;
+        padding-left: 20px;
+        
+        .Breadcrumb{
+            .cursor{
+                cursor: pointer;
+            }
+            padding: 20px 0px 14px;
+            margin-bottom: 0;
+
+        }
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+    }
+    .search-box{
+        margin: 20px;
+        background: white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        flex-shrink: 0;
+        justify-content: space-between;
+        .input-box{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .tit{
+                width: 100px;
+                text-align: right;
+                padding-right: 10px;
+            }
+            .ipt{
+                width: 300px;
+            }
+        }
+       
+        
+    }
+    .content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+        .items{
+            flex-grow: 1;
+            margin: 20px;
+            display: flex;
+            margin-top: 0px;
+            flex-wrap: wrap;
+            overflow: auto;
+            .loading{
+                width: 100%;
+                text-align: center;
+                .loading-button{
+                    span{
+                        padding: 10px 40px;
+                    }
+                    
+                }
+            }
+            .item{
+                width: 32%;
+                height: 150px;
+                background: white;
+                cursor: pointer;
+                border-radius: 4px;
+                display: flex;
+                margin-bottom: 20px;
+                margin-right: 2%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                &:nth-child(3n+0){
+                    margin-right: 0px;
+                }
+                .top{
+                    width: 100%;
+                    .company{
+                        display: flex;
+                        margin: 26px 20px 20px;
+                        .tit{
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            color: white;
+                            font-weight: bold;
+                            border-radius:50%; 
+                            background: #1990ff;
+
+                            flex-shrink: 0;
+                        }
+                        .info{
+                            font-size: 14px;
+                            margin-left: 20px;
+                            width: 84%;
+                            .title{
+                                margin: 12px 0px 20px;
+                                font-weight: 800;
+                                height: 14px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .msg-info{
+                        display: flex;
+                        font-size: 14px;
+                        text-align: center;
+                        justify-content: space-around;
+                        padding-top: 3px;
+                        border-top: 1px solid #E8EBEC;
+                        margin: 10px;
+                        padding-top: 13px;
+                    
+                    }
+                }
+                .bottom{
+                    height: 48px;
+                    border-top:1px solid rgba(233, 233, 233, 1);
+                    background: rgba(247, 249, 250, 1);
+                    width: 100%;
+                    line-height: 48px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.427450980392157);
+                    font-size: 13px;
+                    
+                    transition: 0.5s;
+                    cursor: pointer;
+                    &:active{
+                        background: rgb(235, 235, 235);
+                    }
+                }
+            }
+        }
+        
+    }
+    @keyframes showSearch{
+        0%   {
+            display: flex;
+            opacity: 0;
+        }
+        25%  {
+            opacity: 0.30;
+        }
+        50%  {
+            opacity: 0.6;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .search-content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        .content{
+            margin: 20px;
+            background: #fff;
+            border-radius: 4px;
+            overflow: auto;
+            padding-top: 10px;
+            .but-box-add{
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                padding: 20px 20px 0px;
+                .add{
+                    margin-right: 20px;
+                    flex-shrink: 0;
+                    flex-grow: 1;
+                }
+            }
+           
+            .add-box{
+                margin: 20px;
+                border: 1px solid #e8e8e8;
+                border-radius: 4px 4px 0px 0px;
+                border-bottom: hidden;
+                animation: showSearch 0.5s;
+                .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+                    
+                    padding-right: 4%;
+                }
+                .ant-table-thead > tr > th{
+                    padding-left: 30px;
+                }
+                .action-table{
+                    padding-left: 10% !important;
+                    a{
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .pad-rig-30{
+                padding-right: 30px;
+            }
+            .pad-left-30{
+                padding-left: 30px;
+            }
+            .searchItems{
+                padding: 20px;
+                .item{
+                    border: 1px solid rgba(232, 232, 232, 1);
+                    border-radius: 4px;
+                    border-bottom: none;
+                    margin-bottom: 50px;
+                    .action-box{
+                        a{
+                            margin: 0px 10px;
+                        }
+                        &-one{
+                            a{
+                                margin: 0px 10px;
+                            }
+                            padding-right: 68px;
+                        }
+                    }
+                    .ant-table-thead > tr > th {
+                        background: none;
+                        // transition: background .3s ease;
+                        // text-align: left;
+                        // color: rgba(0, 0, 0, 0.85);
+                        // font-weight: 500;
+                        // border-bottom: none;
+                    }
+                    .item-header{
+                        font-size: 14px;
+                        font-weight: bold;
+                        display: flex;
+                        padding: 0px 20px;
+                        padding-right: 0px;
+                        line-height: 58px;
+                        justify-content: space-between;
+                        background: #fafafa;
+                        border-bottom: 1px solid #e8e8e8;
+                        .action{
+                            display: flex;
+                            display: flex;
+                            align-self: center;
+                            button{
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                    .item-table{
+                        color: initial;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    .text-right{
+        text-align: right !important;
+    }
+    .search-show{
+        animation: showSearch 0.8s;
+
+    }
+    
+}
+.example {
+    background: rgba(0, 0, 0, 0);
+   
+}

@@ -1,0 +1,43 @@
+@bgColor: #f2f2f9;
+
+.layout-wrapper {
+  flex: 1;
+  background-color: @bgColor;
+  font-size: 14px;
+  font-family: PingFangSC-Light,PingFang SC,Helvetica,Tahoma,Arial,Microsoft YaHei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+  display: flex;
+  flex-direction: column;
+  .header-wrapper {
+    background-color: #fff;
+    // display: flex;
+    // flex-direction: column;
+    // padding: 15px 0 15px 20px;
+    padding-left: 20px;
+    height: 40px;
+    > .breadcrumb {
+      line-height: 40px;
+      font-size: 12px;
+    }
+    // .title {
+    //   margin-top: 20px;
+    //   font-size: 20px;
+    //   font-weight: 700;
+    // }
+  }
+  .copyright {
+    // padding: 10px 0;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    background-color: @bgColor;
+  }
+  .layout-content {
+    flex: 1;
+    padding: 20px 20px 0 20px;
+    background-color: @bgColor;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

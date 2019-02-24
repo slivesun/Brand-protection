@@ -1,0 +1,42 @@
+.link-marking-wrapper {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px 20px;
+  .title-wrapper {
+    margin-bottom: 19px;
+    .title {
+      font-size: 18px;
+      color: #333;
+    }
+    .input {
+      width: 242px;
+    }
+  }
+  .table-container {
+    .ant-table-thead {
+      > tr > th {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #f3f7ff;
+        &:first-of-type {
+          padding-left: 35px;
+        }
+      }
+    }
+    .ant-table-tbody {
+      .mark-wrapper {
+        .vertical-line {
+          margin: 0 12px;
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            vertical-align: middle;
+            background-color: #DCDEE7;
+          }
+        } 
+      }
+    } 
+  }
+}

@@ -1,0 +1,187 @@
+
+.accountmanagement{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+      
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: white;
+        padding: 20px;
+        .ant-table-thead tr th{
+            padding: 0px 14px;
+            line-height: inherit;
+        } 
+        .search-box{
+            display: flex;
+            flex-shrink: 0;
+            flex-direction: column;
+            margin-left: -40px;
+            .input-box{
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                margin-left: -40px;
+                .item{
+                    display: flex;
+                    width: 33%;
+                    .ant-select{
+                        outline: none;
+                    }
+                    .lab{
+                        padding: 10px;
+                        min-width: 100px;
+                        text-align: right;
+                        color: rgba(0, 0, 0, 0.85) !important;
+                    }
+                }
+            }
+    
+            .butbox{
+                text-align: right;
+            }
+        }  
+        .button-box{
+            padding: 10px;
+            display: flex;
+            padding-right: 50px;
+            flex-shrink: 0;
+            justify-content: space-between;
+            .action{
+                button{
+                    margin: 0px !important;
+                    margin-right: 10px !important;
+                }
+            }
+        }
+        .content-tab{
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 1;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 0px 0px 20px 10px;
+            .open::before{
+                color:  #52C41A;
+                content: '●';
+            }
+            .close::before{
+                color:  rgb(196, 46, 26);
+                content: '●';
+            }
+            .action-padding{
+                padding: 16px 0px;
+                padding-right: 16px;
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+        
+    }
+
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+.info-item{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .Breadcrumb{
+        background: #fff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    .content{
+        display: flex;
+        margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        background: white;
+        padding: 20px;
+        .item{
+            width: 50%;
+            min-width: 550px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            button{
+                margin-right:20px; 
+            }
+            .title{
+                min-width: 100px;
+                text-align: right;
+                flex-shrink: 0;
+                padding-right: 20px;
+                font-size: 14px;
+            }
+            .ipt-box{
+                min-width: 300px;
+                .AccountEdit{
+                    background-color: #CFA972;
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+            
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+.red-ck::before{
+    content: '*';
+    color: red;
+    padding-right: 10px;
+    margin-left: -15px;
+    vertical-align: text-bottom;
+}
+.add-department{
+    .items{
+        .item{
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            padding: 10px 20px;
+            .title{
+                min-width: 100px;
+                text-align: right;
+                flex-shrink: 0;
+                padding-right: 20px;
+            }
+            .ipt-box{
+                flex-grow: 1;
+            }
+        }
+    }
+}

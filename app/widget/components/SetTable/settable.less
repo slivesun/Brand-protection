@@ -1,0 +1,95 @@
+.set-table{
+    width: 800px !important;
+    .ant-modal-footer{
+        border: none;
+    }
+    .TreeNode-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        background: url(../../../img/icon/mobile.png) no-repeat 0px center;
+        .anticon-close-circle{
+            display: none;
+            color: #999;
+            cursor: pointer;
+        }
+        &:hover{
+            .anticon-close-circle{
+                display: inline-block;
+            }
+        }
+        
+    }
+    .ant-modal-body{
+        padding: 0px;
+        height: 450px;
+        margin-bottom: 10px;
+    }
+    .set-table-box{
+        display: flex;
+        border: 1px solid #d9d9d9;
+        margin: 20px;
+        height: 100%;
+        .info{
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            .box{
+                padding: 0px 20px;
+                overflow-y: auto;
+                .Checkbox{
+                    width: 33%;
+                    margin: 0px;
+                    padding-bottom: 18px;
+                }
+            }
+            h3{
+                font-size: 16px;
+                line-height: 35px;
+                padding-left: 20px;
+                background: #f6f7fb;
+            }
+            .item{
+                padding: 20px 0px 20px;
+                p{
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .sort{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            overflow-y: auto;
+            flex-shrink: 1;
+            .draggable-tree{
+                flex-grow: 1;
+                overflow-y: auto;
+            }
+            p{
+                font-size: 16px;
+                padding-left: 20px;
+                line-height: 35px;
+                background: #f6f7fb;
+                font-weight: bold;
+            }
+            width: 250px;
+            border-left:1px solid #e8e8e8; 
+            .ant-tree li span.ant-tree-switcher.ant-tree-switcher-noop{
+                display: none;
+            }
+            .ant-tree li .ant-tree-node-content-wrapper{
+                width: 100%;
+                cursor: ns-resize;
+                padding-left: 20px;
+            }
+            h6{
+                padding-left: 20px;
+                color: #999;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

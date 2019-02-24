@@ -1,0 +1,50 @@
+@qualifyColor: #1890ff;
+@disQualifyColor: #f00;
+
+.activity-inspect-card {
+  background-color: #fff;
+  padding: 0px 20px 20px;
+  .head {
+    font-size: 16px;
+    // margin-bottom: 23px;
+    padding: 20px 0px;
+    padding-right: 20px;
+    color: #333;
+  }
+  .ant-card-head {
+    padding: 0 20px;
+    background-color: #f3f7ff;
+  }
+  .ant-card-body {
+    .activity-baseinfo, .screenshot {
+      .ant-col-8:nth-of-type(n+4) {
+        margin-top: 12px;
+      }
+    }
+    .screenshot {
+      .ant-col-8 {
+        display: flex;
+      }
+    }
+  }
+  .customeBtn {
+    cursor: pointer;
+    background-color: #fff;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 1.5;
+    outline: 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+  .customeBtn.qualify {
+    background-color: @qualifyColor;
+    border-color: @qualifyColor;
+    color: #fff;
+  }
+  .customeBtn.disQualify {
+    background-color: @disQualifyColor;
+    border-color: @disQualifyColor;
+    color: #fff;
+  }
+}

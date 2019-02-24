@@ -1,0 +1,90 @@
+.sevenday-card-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  .items {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .item {
+      cursor: pointer;
+      float: left;
+      width: 14.28571%;
+      box-sizing: border-box;
+      background-color: #fff;
+      height: 100px;
+      transition: all 0.1s linear;
+      border: 1px solid #e8ebec;
+      padding: 15px 20px 20px;
+      .date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span:first-of-type {
+          display: flex;
+          align-items: center;
+        }
+        span:last-of-type {
+          font-size: 22px;
+          font-weight: 700;
+          color: #BDA571;
+        }
+        .today {
+          width: 30px;
+          height: 30px;
+          font-size: 12px;
+          border-radius: 50%;
+          background-color: rgba(250,173,20,0.3);
+          text-align: center;
+          line-height: 30px;
+          color: #333;
+          // float: right;
+          // margin-top: 10px;
+          // opacity: 0.3;
+        }
+      }
+      .text {
+        margin-top: 20px;
+        white-space: nowrap;
+      }
+      &:not(:first-of-type) {
+        border-left-color: transparent;
+      }
+      &.active {
+        // height: 130px;
+        border: none;
+        transform: scaleX(1.03);
+        border-top: 4px solid #FAAD14;
+        box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+        // .today {
+        //   width: 30px;
+        //   height: 30px;
+        //   font-size: 12px;
+        //   border-radius: 50%;
+        //   background-color: #FAAD14;
+        //   text-align: center;
+        //   line-height: 30px;
+        //   float: right;
+        //   margin-top: 10px;
+        //   opacity: 0.3;
+        // }
+      }
+    }
+  }
+  .shop-btns {
+    .head {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      span {
+        cursor: pointer;
+      }
+    }
+    .btns {
+      .btn {
+        margin-left: 10px;
+      }
+    }
+  }
+}

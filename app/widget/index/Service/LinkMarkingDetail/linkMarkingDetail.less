@@ -1,0 +1,70 @@
+.link-marking-detail-wrapper {
+  flex: 1;
+  background-color: #fff;
+  padding: 0 20px;
+  .main-tab {
+    padding-bottom: 20px;
+    .tab-item {
+      .ant-list-header {
+        background-color: #F3F7FF;
+        font-size: 16px;
+        color: #262626;
+      }
+      .list-item {
+        padding: 0 20px;
+        border-bottom: 1px solid #EBEBEB;
+        .mark-btn {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          color: #108CEE;
+          > i {
+            display: inline-block;
+            width: 14px;
+            padding-top: 14px;
+            background-image: url('../../../../img/mark_default.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 6px;
+          }
+          &.active > i {
+            background-image: url('../../../../img/mark_sel.png');
+          }
+        }
+        .overflow-ellipsis {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 80%;
+        }
+        > div:nth-of-type(2) {
+          color: #333;
+        }
+        > div:not(:nth-of-type(n+5)) {
+          padding: 14px 0;
+          border-bottom: 1px dashed #EBEBEB;
+        }
+        > div:last-of-type {
+          box-sizing: border-box;
+          min-height: 44px;
+          padding: 6px 0;
+          .cascader-wrapper {
+            width: 58%;
+            padding: 0;
+            margin-left: 9px;
+          }
+          .options-btn {
+            margin-left: 40px;
+            > i {
+              color: #108CEE;
+              cursor: pointer;
+              &:first-of-type {
+                margin-right: 17px;
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+
+
+.dealerlist{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    
+    // .Breadcrumb{
+    //     background: #fff;
+    //     padding: 10px 20px;
+    //     margin-bottom: 20px;
+    // }
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        .search-box{
+            display: flex;
+            flex-shrink: 0;
+            flex-direction: column;
+            background: #fff;
+            .input-box{
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                .item{
+                    display: flex;
+                    width: 33%;
+                    padding-right: 50px;
+                   
+                    .lab{
+                        padding: 10px;
+                        min-width: 100px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .butbox{
+                text-align: right;
+            }
+            
+        }
+
+        .list-box{
+            background: #fff;
+            padding: 10px 10px 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 9999;
+            flex-shrink: 0;
+            justify-content: space-between;
+            .unphone{
+                cursor: pointer;
+                color: red;
+                padding-left:10px; 
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+    }    
+    // .copyright{
+    //     text-align: center;
+    //     padding: 10px;
+    //     font-size: 12px;
+    // }
+}

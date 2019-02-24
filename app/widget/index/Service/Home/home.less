@@ -1,0 +1,71 @@
+.KEFUhome{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .content{
+        margin: 20px;
+        flex: 1;
+        display: flex;
+        overflow: auto;
+        padding: 4px;
+        .contentBox{
+            flex: 1;
+            float: left;
+            margin: 10px;
+            margin-bottom: 0px;
+            background: #fff;
+            height: 414px;
+            padding: 20px;
+            .CONH{
+                font-size:18px;
+                color:rgba(51,51,51,1);
+                margin-top: 10px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            ul{
+                margin-top: 10px;
+                li{
+                    margin-top: 20px;
+                    height: 114px;
+                    display: flex;
+                    box-shadow:0px 0px 20px rgba(102,102,102,0.2);
+                    .ContentSl{
+                        flex: 1;
+                        text-align: center;
+                        margin-top: 20px;
+                        img{
+                            width:62px;
+                            height:62px;
+                        }
+                    }
+                    .ContentSr{
+                        flex: 2;
+                        h4{
+                            font-size:30px;
+                            color:rgba(51,51,51,1);
+                            margin-top: 20px;
+                        }
+                        p{
+                            margin-top: 10px;
+                            font-size:14px;
+                            color:rgba(102,102,102,1);
+                        }
+                    }
+                }
+            }
+            h5:before {
+                content: "丨";
+                width:4px;
+                height:20px;
+                color: #BDA571;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}

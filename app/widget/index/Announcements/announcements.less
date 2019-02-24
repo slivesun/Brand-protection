@@ -1,0 +1,349 @@
+
+.Announcements{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .content{
+        display: flex;
+        // margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        padding: 4px;
+        .search-box{
+            display: flex;
+            padding-top: 20px;
+            flex-shrink: 0;
+            flex-direction: column;
+            background: white;
+            padding-left: 15px;
+            .input-box{
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                .item{
+                    display: flex;
+                    width: 30%;
+                    padding-right: 50px;
+                   
+                    .lab{
+                        padding: 10px;
+                        min-width: 100px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .butbox{
+                text-align: right;
+            }
+            
+        } 
+        .infolist{
+            // margin-top: 20px;
+            margin-top: 10px;
+            background: white;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 30px;
+            flex-shrink: 0;
+            .state::after{
+                color: red;
+                content: '●';
+                font-size: 12px;
+                vertical-align: top;
+                padding-left: 20px;
+            }
+            .addbut{
+                width: 100%;
+                height: 32px;
+                font-size: 14px;
+                
+            }
+            .items{
+                padding: 20px 0px;
+                .item{
+                    border-top: 1px solid #eee;
+                    margin-bottom: 10px;
+                    
+                    
+                    .title{
+                        max-width: 80%;
+                        font-size: 16px;
+                        padding: 20px 0px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-weight: bold;
+                        a{
+                            color: #333 !important;
+                            &:hover{
+                                color: #1890ff !important;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #666666 !important;
+                        padding-right: 320px;
+                        // width:100% ;
+                        // text-overflow: ellipsis;
+                        // white-space: nowrap;
+                        // overflow: hidden;
+                    }
+                  
+                    footer{
+                        font-size: 12px;
+                        padding: 16px 0px 0px;
+                        display: flex;
+                        justify-content: space-between;
+                        div{
+                           color:  #999999;
+
+                        }
+                        .anticon-delete{
+                            color: #C1C1C1;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
+                        span{
+                            padding-right:  16px;
+                            i{
+                                &:hover{
+                                    color: #1890ff !important;
+                                }
+                            }
+                        }
+                        .departs{
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            width: 40%;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+                flex-shrink: 0;
+                .info{
+                    font-size: 14px;
+                    color: #999;
+                }
+            }
+        }
+        
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+
+.upsure{
+    background-color: #CFA972 !important;
+    span{
+        color: #ffffff;
+    }
+}
+
+
+
+.add-announcements{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    li[title*="全部"]{
+        display: none;
+    }
+    .content{
+        display: flex;
+        margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        padding: 20px;
+        padding-top: 40px;
+        background: #ffffff;
+        .item{
+            width: 50%;
+            min-width: 550px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            button{
+                margin-right:20px; 
+            }
+            .title{
+                min-width: 100px;
+                text-align: right;
+                flex-shrink: 0;
+                padding-right: 20px;
+            }
+            .ipt-box{
+                min-width: 300px;
+            }
+            
+        }
+        
+        
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+.Breadcrumb{
+    background: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.red-ck::before{
+    content: '*';
+    color: red;
+    padding-right: 10px;
+    margin-left: -15px;
+    vertical-align: text-bottom;
+}
+.info-announcements{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    .content{
+        display: flex;
+        margin: 0px 20px;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: auto;
+        padding: 4px;
+        background: #fff;
+        .BraftEditor-container.disabled {
+            opacity: 1;
+            pointer-events: auto;
+            overflow: auto;
+            filter: grayscale(0%);
+        }
+        .BraftEditor-controlBar{
+            overflow: auto;
+        }
+        .header-box{
+            border-bottom:1px solid #eeeeee;
+            padding: 30px;
+            padding-bottom: 15px;
+            .title{
+                font-size: 18px;
+                color: #333;
+            }
+            .info-text{
+                font-size: 12px;
+                padding: 16px 0px 0px;
+                display: flex;
+                justify-content: space-between;
+               
+                span{
+                    padding-right:  16px;
+                }
+                .departs{
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 40%;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .unread{
+                    width: 200px;
+                    text-align: right;
+                    color: #999;
+                }
+            }
+            
+        }
+        .editor-box{
+            padding:20px;
+            .disabled{
+                .BraftEditor-content{
+                    .DraftEditor-root{
+                        .DraftEditor-editorContainer{
+                            .public-DraftEditor-content{
+                                line-height: 25px !important;
+                                font-size: 14px;
+                                color: #666;
+                                span{
+                                    line-height: 25px !important;
+                                    font-size: 14px;
+                                    color: #666;
+                                }
+                                p{
+                                    line-height: 25px !important;
+                                    font-size: 14px;
+                                    color: #666;
+                                }
+                                div{
+                                    line-height: 25px !important;
+                                    font-size: 14px;
+                                    color: #666;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .attach-urls{
+            width: 50%;
+            min-width: 600px;
+            padding: 30px;
+            .attach-header{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #eeeeee;
+                margin-bottom: 10px;
+                align-items: baseline;
+                justify-content: space-between;
+            }
+            li{
+                line-height: 30px;
+                font-size: 12px;
+                .anticon{
+                    font-size: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+.AnnDEL{
+    background: url(../../../img/icon/del_normal.png) no-repeat;
+    width: 16px;
+    height: 15px;
+    padding-right: 30px;
+    cursor:pointer;
+    &:hover{
+        background: url(../../../img/icon/icon_operating_del.png) no-repeat;
+    }
+    //style={{background:'url(../../../../../img/icon/del_normal.png) no-repeat',width:'16px',height:'15px',paddingRight:'30px'}}
+}

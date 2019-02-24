@@ -1,0 +1,96 @@
+.ProductInformation{
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f9;
+    flex-grow: 1;
+    // justify-content: center;
+    // align-items: center;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    .InformationNav{
+        padding: 20px 10px;
+        background: #fff;
+        p{
+            color: #ccc;
+            span{
+                margin-right: 10px;
+                margin-left: 10px;
+                a{
+                    color: #ccc;
+                }
+            }
+        }
+        h4{
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+
+        }
+    }
+    .ProductInformationBOX{
+        // overflow-y: scroll;
+        background: #fff;
+        flex: 1;
+        // flex-direction: column;
+       
+        padding: 10px;
+        // margin: 10px 20px 0 20px;
+            .tops{
+                width: 100px;
+                height: 60px;
+                float: left;
+                border-radius:2px;
+            }
+        
+        .Custis{
+            text-align:center;
+            font-size: 14px;
+            color: #999;
+            margin-top: 10px;
+        }
+        .ProductInformationHeader{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .ProductInformationBody{
+            flex: 1;
+            .custom-filter-dropdown {
+                padding: 8px;
+                border-radius: 6px;
+                background: #fff;
+                box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+              }
+              
+              .custom-filter-dropdown input {
+                width: 130px;
+                margin-right: 8px;
+              }
+              
+              .custom-filter-dropdown button {
+                margin-right: 8px;
+              }
+              
+              .highlight {
+                color: #f50;
+              }
+              
+        }
+
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        flex-shrink: 0;
+        .info{
+            font-size: 14px;
+            color: #999;
+            width: auto;
+        }
+    }
+    .Copyright{
+        margin-top: 10px;
+    }
+}

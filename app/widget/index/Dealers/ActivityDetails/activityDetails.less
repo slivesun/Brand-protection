@@ -1,0 +1,112 @@
+@bgColor: #f0f2f5;
+@blueColor: #1890ff;
+
+.activity-details-wrapper {
+  flex: 1;
+  font-size: 14px;
+  background-color: @bgColor;
+  display: flex;
+  flex-direction: column;
+  .top-header {
+      background-color: #fff;
+      padding: 20px;
+      .title {
+          font-size: 20px;
+          margin-top: 15px;
+          font-weight: 700;
+      }
+  }
+  .content {
+    flex: 1;
+    // padding: 0 20px;
+    background-color: @bgColor;
+    .main {
+      background-color: #fff;
+      // margin: 20px 0;
+      padding: 20px;
+      .overflow-hidden {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 10px;
+      }
+      .shop-status-wrapper {
+        background-color: #f7f7f7;
+        padding: 20px 20px 30px;
+        .title {
+          font-size: 18px;
+          color: #333;
+          margin-bottom: 30px;
+        }
+        .col p:nth-of-type(2) {
+          margin: 30px 0;
+        }
+        .img-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .image {
+            width: 80px;
+            height: 0;
+            padding-top: 74px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('../../../../img/inspecting.png');
+          }
+          .text {
+            font-size: 16px;
+            color: #333;
+            margin-top: 12px;
+          }
+        }
+      }
+      .product-item-wrapper {
+        margin-top: 25px;
+        .ant-card-head {
+          background-color: #f3f7ff;
+          .product-info {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 10px;
+          }
+          .toggle {
+            cursor: pointer;
+            color: @blueColor;
+          }
+        }
+        .ant-card-body {
+          .top {
+            .row {
+              .col:nth-of-type(n+4) {
+                margin-top: 30px;
+              }
+            }
+          }
+          .bottom {
+            .row.waitReview {
+              .ant-col-8:nth-of-type(n+4) {
+                margin-top: 14px;
+              }
+            }
+            .row.reviewed {
+              .ant-col-8, .ant-col-7 {
+                p:nth-of-type(2) {
+                  margin: 14px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .pagination {
+        padding: 20px 0 50px;
+        text-align: right;
+      }
+    }
+  }
+  .copyright {
+    background-color: @bgColor;
+    padding: 30px; 
+  }
+}
